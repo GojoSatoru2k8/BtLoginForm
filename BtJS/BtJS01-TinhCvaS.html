@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Tính chu vi và diện tích</title>
+</head>
+<body>
+    <p>Tính chu vi - Diện tích hình tròn</p>
+    <p>Nhập bán kính hình tròn: 
+        <input type="number" id="bankinh">
+        
+        <button onclick="hamxulicode()">Tính đi e</button>
+    </p>
+    <p>Kết quả tính khi bán kính bằng <span id="bankinhhienthi"></span> là: </p>
+    <p>Chu vi hình tròn là: <span id="chuvihienthi"></span></p>
+    <p>Diện tích hình tròn là: <span id="dientichhienthi"></span></p>
+
+    <script>        
+        function hamxulicode(){
+            // Lấy giá trị của thẻ input
+            let r = document.getElementById("bankinh").value;
+            document.getElementById("bankinhhienthi").innerHTML = r;
+            let chuvi = 2*3.14*r;
+            let dientich = 3.14*r*r;
+            document.getElementById("chuvihienthi").innerHTML = chuvi;
+            document.getElementById("dientichhienthi").innerHTML = dientich;
+        }
+
+
+    </script>
+</body>
+</html>
