@@ -24,9 +24,9 @@ function timTime() {
 
 myInterval = null;
 
+myInterval = setInterval(timTime,1000);
 
 function Start() {
-    myInterval = setInterval(timTime,1000);
 
 }
 
